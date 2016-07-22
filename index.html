@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="pokefile">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+      <title>Pokefile</title>
+      <meta name="description" content="Pokefile proyecto personal.">
+      <meta content="Pokefile"   property="og:title"/>
+      <meta content="article" property="og:type"/>
+      <meta content="" property="og:url"/>
+      <meta content=""  property="og:image"/>
+      <meta content="Pokefile proyecto personal." property="og:description"/>
+      <link rel="icon" type="image/png"   href="" />
+
+      <!-- Dependencias -->
+      <link rel="stylesheet" href="assets/css/angular-material.min.css">
+      <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+
+      <!-- Google Fonts -->
+      <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+      <!-- CORE -->
+      <link rel="stylesheet" href="assets/css/style.min.css">
+
+      <base href="/" />
+
+   </head>
+   <body>
+      <div data-ng-controller="Controller" data-ng-hide="loading" class="charge" data-ng-class="{chage_off: loading}">
+        <!--<figure class="preload">
+         <img class="prelaod-img" src="" />
+        </figure>-->
+      </div>
+      <!--Cabecera de la pagina-->
+      <header set-header></header>
+      <!--cuerpo de la pagina-->
+      <section data-ng-view></section>
+      <!--Pie de la pagina-->
+      <header set-footer></header>
+      <!-- Dependencias JS-->
+      <script src="assets/js/jquery.min.js"></script>
+
+      <!-- Dependencias AngularJS-->
+      <script src="assets/js/angular.min.js"></script>
+      <script src="assets/js/angular-route.min.js"></script>
+      <script src="assets/js/angular-animate.min.js"></script>
+      <script src="assets/js/angular-aria.min.js"></script>
+      <script src="assets/js/angular-material.min.js"></script>
+      <script src="assets/js/angular-local-storage.min.js"></script>
+      <script src="assets/js/firebase.js"></script>
+      <script src="assets/js/angularfire.min.js"></script>
+      
+         
+      <!-- CORE -->
+      <script src="assets/js/templates.js"></script>
+      <script src="assets/js/main.min.js"></script>
+   </body>
+</html>
