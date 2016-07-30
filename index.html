@@ -36,6 +36,8 @@
       <section data-ng-view></section>
       <!--Pie de la pagina-->
       <footer set-footer></footer>
+      <!--Buscador de pokemones-->
+      <div id="sch" set-search class="pokemon-search" data-ng-if="loading === true"></div>
       <!--Loader--->
       <div class="dc-loader">
          <div dc-loader="{{loadWidth}}" class="dc-loader-in"></div>
